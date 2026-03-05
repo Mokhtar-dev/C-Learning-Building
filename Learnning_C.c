@@ -1,6 +1,7 @@
 #include <stdio.h>   //standard input/output library, it contains functions for input and output operations (like printf and scanf)
 #include <stdbool.h> // this header file is used to include the boolean data type in C, it defines the bool type and the true and false constants
 #include <string.h>  // this header file is used to include string handling functions in C, it contains functions for manipulating strings (like strlen, strcpy, strcat, etc.)
+#include <math.h>    // this header file is used to include mathematical functions in C, it contains functions for performing mathematical operations (like sqrt, pow, abs, ceil, floor, round, etc.)
 int main()           // the main function is the entry point of a C program, it is where the program starts executing
 {
     // this is my first C program
@@ -11,16 +12,20 @@ int main()           // the main function is the entry point of a C program, it 
     printf("Hello, World!\n");
 
     printf("This is a simple C program.\n"); // the  \n is used to print a new line
+    //=========================================================================================================================================================================================
 
     // Varialbes in C
+
     int myNum = 5;             // Integer (whole number)                 (4 bytes)
     float myFloatNum = 5.99;   // Floating point number                  (4 bytes)
     double myDoubleNum = 9.98; // Double-precision floating point number (8 bytes)
     char myLetter = 'D';       // Character                              (1 byte)
     char myString[] = "Hello"; // String (array of characters)           (6 bytes, including the null terminator) can also take more than 6 bytes if the string is longer
     bool isTrue = true;        // Boolean (true or false)                (1 byte)
+    //=========================================================================================================================================================================================
 
     // Formatting output in C
+
     // Format specifier = special token that begin with % symbol,
     //                   followed by a chracter that indicates the type of data to be printed
     //                   and optional modifiers that specify the width, precision, or other formatting options for the output
@@ -32,8 +37,10 @@ int main()           // the main function is the entry point of a C program, it 
     printf("Character: %c\n", myLetter);  // the %c is used to print a character
     printf("String: %s\n", myString);     // the %s is used to print a string
     printf("Boolean: %d\n", isTrue);      // the %d is used to print a boolean value (1 for true, 0 for false)
+    //=========================================================================================================================================================================================
 
     // Operators in C
+
     int a = 10;
     int b = 5; // ---> NOTE: U CAN NOT RETAIN THE DECIMAL WHEN DIVIDING TWO INTEGERS, IT WILL RETURN AN INTEGER VALUE, NOT A FLOATING POINT VALUE
     int c = 2;
@@ -46,6 +53,7 @@ int main()           // the main function is the entry point of a C program, it 
     int decrement = b--;    // decrement operator (decreases the value of b by 1)
     a += 2;                 // addition assignment operator (adds c to a and assigns the result to a)
     b -= 4;                 // subtraction assignment operator (subtracts c from b and assigns the result to b)
+    //=========================================================================================================================================================================================
 
     // User input in C
 
@@ -76,6 +84,21 @@ int main()           // the main function is the entry point of a C program, it 
     printf("Your age is: %d\n", age); // Displaying the Values of each variable after taking the input from the user
     printf("Your GPA is: %.2f\n", GPA);
     printf("Your grade is: %c\n", grade);
+    //=========================================================================================================================================================================================
+
+    // common math functions in C
+
+    int X = 10;
+    // You can uncomment any of the following lines to test the corresponding math function, just make sure to include the math.h header file and link the math library when compiling (gcc -o program program.c -lm)
+
+    // X= sqrt(X); // the sqrt function is used to calculate the square root of a number, it is defined in the math.h header file, so you need to include it and link the math library when compiling (gcc -o program program.c -lm)
+    // X= pow(X, 2); // the pow function is used to calculate the power of a number, it takes two arguments: the base and the exponent, it is also defined in the math.h header file
+    // X= abs(X); // the abs function is used to calculate the absolute value of an integer, it is defined in the stdlib.h header file, so you need to include it when using this function
+    // X= ceil(3.14); // the ceil function is used to round a floating-point number up to the nearest integer, it is defined in the math.h header file
+    // X= floor(3.14); // the floor function is used to round a floating-point number down to the nearest integer, it is also defined in the math.h header file
+    // X= round(3.14); // the round function is used to round a floating-point number to the nearest integer, it is also defined in the math.h header file
+    printf("X = %d\n", X);
+    //=========================================================================================================================================================================================
 
     return 0;
 }
