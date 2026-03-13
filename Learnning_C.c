@@ -88,16 +88,17 @@ int main()           // the main function is the entry point of a C program, it 
 
     // common math functions in C
 
-    int X = 10;
+    float X = 10;
     // You can uncomment any of the following lines to test the corresponding math function, just make sure to include the math.h header file and link the math library when compiling (gcc -o program program.c -lm)
 
     // X= sqrt(X); // the sqrt function is used to calculate the square root of a number, it is defined in the math.h header file, so you need to include it and link the math library when compiling (gcc -o program program.c -lm)
     // X= pow(X, 2); // the pow function is used to calculate the power of a number, it takes two arguments: the base and the exponent, it is also defined in the math.h header file
     // X= abs(X); // the abs function is used to calculate the absolute value of an integer, it is defined in the stdlib.h header file, so you need to include it when using this function
+    // X = log(X);
     // X= ceil(3.14); // the ceil function is used to round a floating-point number up to the nearest integer, it is defined in the math.h header file
     // X= floor(3.14); // the floor function is used to round a floating-point number down to the nearest integer, it is also defined in the math.h header file
     // X= round(3.14); // the round function is used to round a floating-point number to the nearest integer, it is also defined in the math.h header file
-    printf("X = %d\n", X);
+    printf("X = %f\n", X);
     //=========================================================================================================================================================================================
 
     return 0;
