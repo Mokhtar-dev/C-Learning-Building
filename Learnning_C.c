@@ -4,7 +4,7 @@
 #include <math.h>    // this header file is used to include mathematical functions in C, it contains functions for performing mathematical operations (like sqrt, pow, abs, ceil, floor, round, etc.)
 int main()           // the main function is the entry point of a C program, it is where the program starts executing
 {
-    // this is my first C program
+    // this is my first C program:
 
     /*this is
     a multi-line comment*/
@@ -14,7 +14,7 @@ int main()           // the main function is the entry point of a C program, it 
     printf("This is a simple C program.\n"); // the  \n is used to print a new line
     //=========================================================================================================================================================================================
 
-    // Varialbes in C
+    // Varialbes in C:
 
     int myNum = 5;             // Integer (whole number)                 (4 bytes)
     float myFloatNum = 5.99;   // Floating point number                  (4 bytes)
@@ -24,7 +24,7 @@ int main()           // the main function is the entry point of a C program, it 
     bool isTrue = true;        // Boolean (true or false)                (1 byte)
     //=========================================================================================================================================================================================
 
-    // Formatting output in C
+    // Formatting output in C:
 
     // Format specifier = special token that begin with % symbol,
     //                   followed by a chracter that indicates the type of data to be printed
@@ -39,7 +39,7 @@ int main()           // the main function is the entry point of a C program, it 
     printf("Boolean: %d\n", isTrue);      // the %d is used to print a boolean value (1 for true, 0 for false)
     //=========================================================================================================================================================================================
 
-    // Operators in C
+    // Operators in C:
 
     int a = 10;
     int b = 5; // ---> NOTE: U CAN NOT RETAIN THE DECIMAL WHEN DIVIDING TWO INTEGERS, IT WILL RETURN AN INTEGER VALUE, NOT A FLOATING POINT VALUE
@@ -55,7 +55,7 @@ int main()           // the main function is the entry point of a C program, it 
     b -= 4;                 // subtraction assignment operator (subtracts c from b and assigns the result to b)
     //=========================================================================================================================================================================================
 
-    // User input in C
+    // User input in C:
 
     // Don't Declare a variable without assigning it a value, it will contain a garbage value and can cause unexpected behavior in your program
     // int age; ----> this is a variable declaration without initialization, it will contain a garbage value (BAD PRACTICE !!)
@@ -86,7 +86,7 @@ int main()           // the main function is the entry point of a C program, it 
     printf("Your grade is: %c\n", grade);
     //=========================================================================================================================================================================================
 
-    // common math functions in C
+    // Common math functions in C:
 
     float X = 10;
     // You can uncomment any of the following lines to test the corresponding math function, just make sure to include the math.h header file and link the math library when compiling (gcc -o program program.c -lm)
@@ -94,11 +94,38 @@ int main()           // the main function is the entry point of a C program, it 
     // X= sqrt(X); // the sqrt function is used to calculate the square root of a number, it is defined in the math.h header file, so you need to include it and link the math library when compiling (gcc -o program program.c -lm)
     // X= pow(X, 2); // the pow function is used to calculate the power of a number, it takes two arguments: the base and the exponent, it is also defined in the math.h header file
     // X= abs(X); // the abs function is used to calculate the absolute value of an integer, it is defined in the stdlib.h header file, so you need to include it when using this function
-    // X = log(X);
+    // X = log(X); // the log function is used to calculate the natural logarithm of a number, it is defined in the math.h header file
+    // X = exp(X);     // the exp function is used to calculate the exponential of a number, it is also defined in the math.h header file
     // X= ceil(3.14); // the ceil function is used to round a floating-point number up to the nearest integer, it is defined in the math.h header file
     // X= floor(3.14); // the floor function is used to round a floating-point number down to the nearest integer, it is also defined in the math.h header file
     // X= round(3.14); // the round function is used to round a floating-point number to the nearest integer, it is also defined in the math.h header file
     printf("X = %f\n", X);
+    //=========================================================================================================================================================================================
+
+    // IF statement in C:
+
+    /*so what is an if statement IF is a conditional statement
+     which means if this thing is TRUE do some code and
+     if its not dont do any thing or do something else */
+
+    int age_1 = 21;
+
+    /*NOTE the if conditions are excuted consuctively, which means if the first condition is true the code inside it will be excuted
+    and the rest of the conditions will be ignored, but if the first condition is false the program will check the second condition and so on
+    until it finds a true condition or reaches the end of the if statement*/
+
+    if (age_1 >= 18)
+    {
+        printf("You are an adult");
+    }
+    else if (age_1 < 0)
+    {
+        printf("You are not born yet What the hell are u doing here");
+    }
+    else
+    {
+        printf("You are a minor");
+    }
     //=========================================================================================================================================================================================
 
     return 0;
