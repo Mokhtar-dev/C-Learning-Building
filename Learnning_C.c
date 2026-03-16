@@ -16,6 +16,7 @@ int main()           // the main function is the entry point of a C program, it 
 
     // Varialbes in C:
 
+    // A variable is a container for storing a value
     int myNum = 5;             // Integer (whole number)                 (4 bytes)
     float myFloatNum = 5.99;   // Floating point number                  (4 bytes)
     double myDoubleNum = 9.98; // Double-precision floating point number (8 bytes)
@@ -89,16 +90,18 @@ int main()           // the main function is the entry point of a C program, it 
     // Common math functions in C:
 
     float X = 10;
-    // You can uncomment any of the following lines to test the corresponding math function, just make sure to include the math.h header file and link the math library when compiling (gcc -o program program.c -lm)
+    /*You can uncomment any of the following lines to test the corresponding math function,
+    just make sure to include the math.h header file*/
 
-    // X= sqrt(X); // the sqrt function is used to calculate the square root of a number, it is defined in the math.h header file, so you need to include it and link the math library when compiling (gcc -o program program.c -lm)
-    // X= pow(X, 2); // the pow function is used to calculate the power of a number, it takes two arguments: the base and the exponent, it is also defined in the math.h header file
-    // X= abs(X); // the abs function is used to calculate the absolute value of an integer, it is defined in the stdlib.h header file, so you need to include it when using this function
-    // X = log(X); // the log function is used to calculate the natural logarithm of a number, it is defined in the math.h header file
-    // X = exp(X);     // the exp function is used to calculate the exponential of a number, it is also defined in the math.h header file
-    // X= ceil(3.14); // the ceil function is used to round a floating-point number up to the nearest integer, it is defined in the math.h header file
-    // X= floor(3.14); // the floor function is used to round a floating-point number down to the nearest integer, it is also defined in the math.h header file
-    // X= round(3.14); // the round function is used to round a floating-point number to the nearest integer, it is also defined in the math.h header file
+    X = sqrt(X);     // the sqrt function is used to calculate the square root of a number
+    X = pow(X, 2);   // the pow function is used to calculate the power of a number
+    X = abs(X);      // the abs function is used to calculate the absolute value of an integer
+    X = log(X);      // the log function is used to calculate the natural logarithm of a number
+    X = exp(X);      // the exp function is used to calculate the exponential of a number
+    X = ceil(3.14);  // the ceil function is used to round a floating-point number up to the nearest integer
+    X = floor(3.14); // the floor function is used to round a floating-point number down to the nearest integer
+    X = round(3.14); // the round function is used to round a floating-point number to the nearest integer
+
     printf("X = %f\n", X);
     //=========================================================================================================================================================================================
 
@@ -127,6 +130,26 @@ int main()           // the main function is the entry point of a C program, it 
         printf("You are a minor");
     }
     //=========================================================================================================================================================================================
+
+    // Switch statment in C:
+
+    /*A switch statement is a control statement that
+    allows you to execute different blocks of code
+    based on the value of a variable or expression,
+    it is an alternative to using multiple if-else statements
+    when you have a large number of conditions to check*/
+
+    int day = 0;
+    printf("Enter a number between 1 and 7 to represent a day of the week:\n");
+    scanf("%d", &day);
+    switch (day)
+    {
+    case 1:
+        printf("Monday");
+        break; /*the break statement is used to exit the switch statement after a case is executed,
+                if you forget to use it the program will continue to execute the next cases until
+                it finds a break statement or reaches the end of the switch statement*/
+    }
 
     return 0;
 }
