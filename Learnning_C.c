@@ -2,8 +2,8 @@
 #include <stdbool.h>  // this header file is used to include the boolean data type in C, it defines the bool type and the true and false constants
 #include <stdio.h>    //standard input/output library, it contains functions for input and output operations (like printf and scanf)
 #include <string.h>   // this header file is used to include string handling functions in C, it contains functions for manipulating strings (like strlen, strcpy, strcat, etc.)
-int main()            // the main function is the entry point of a C program, it is where the program starts executing
-{
+int main() {          // the main function is the entry point of a C program, it is where the program starts executing
+
     // this is my first C program:
 
     /*this is
@@ -232,8 +232,6 @@ int main()            // the main function is the entry point of a C program, it
     }
 
     //=========================================================================================================================================================================================
-
-  
 
     return 0;
 }
